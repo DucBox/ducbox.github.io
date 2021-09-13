@@ -46,6 +46,8 @@ nav a:hover {
 }
 #flex_container {
 	display : flex;
+	flex-wrap : nowrap;
+
 }
 footer {
 	background-color : black;
@@ -82,4 +84,29 @@ table th {
   text-align: left;
   background-color: #04AA6D;
   color: white;
+}
+
+@media(max-width: 800px) {
+	#left_side {
+		background-color: blue;
+		flex :100%;
+	}
+	#right_side {
+		flex :100%;
+	}
+	#flex_container {
+		flex-wrap : wrap;
+	}
+}	
+
+@media(max-width :400px) {
+	#left_side {
+		flex :100%;
+	}
+	#right_side {
+		flex :100%;
+	}
+	#flex_container {
+		flex-wrap : wrap;
+	}
 }
