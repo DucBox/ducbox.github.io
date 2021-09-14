@@ -7,19 +7,26 @@
 	<meta name = "name" content = "team"/>
 	<meta name = "developer" content = "Quang Duc"/>
 	<meta name = "topic website" content = "Information"/>
+	<meta charset = "utf-8" />
+	<script src = "myscript.js" ></script>
+	<meta name = "description" content = "DUC Responsive Register Form" />
 	<link rel = "stylesheet" href = "css/web.css">
 	<title> DucBox's project </title>
 </head>
 <body>
-	<h1 id = "menu_text"> Duc's Website : My small project </h1>
-	
+	<div id = "open_container">
+		<h1 id = "menu_text"> Duc's Website : My small project </h1>
+		<img id = "picture_img" src = "sky.jpeg"/>
+	</div>
 	<nav>
+		<a href="#menu_text">Home </a>
 		<a href="#information">Information</a>
 		<a href="#education">Education</a>
 		<a href="#contact">Contact</a>
 		<a href="#ranking">Ranking</a>
 		<a href="#team">My Team</a>
 		<a href="#important">Important People</a>
+		<a href="#register_form">Register Form </a>
 	</nav>
 	
 
@@ -153,7 +160,6 @@
 			</div>
 			<div>
 				<br>
-				<br>
 			</div>
 			<div id = "team_container">
 				<div class = "team_member">
@@ -265,6 +271,107 @@
 			</div>
 		</div>		
 	</div>
+	<hr/>
+	
+	<h1 id = "register_form"> Register Form </h1>
+	<form id = "form" method = "post" action = "https://dunglailaptrinh.com/api.php">
+		<fieldset>	
+			<legend> Personal Information </legend>
+			<p> <strong> Complete your information! </strong></p>
+			<p>
+				<label for = "firstname" > Enter your First name: </label>
+				<input type = "text" id = "firstname" name = "firstname" value = "">
+			</p>
+			<p>
+				<label for = "lastname" > Enter your Last name: </label>
+				<input type = "text" id = "lastname" name = "lastname" value = "">
+			</p>
+			<p>
+				<label for = "middlename" > Enter your Middle name: </label>
+				<input type = "text" id = "middlename" name = "middlename" value = "">
+			</p>
+			<p>
+				<label for = "phonenumber" > Enter your Phone number: </label>
+				<input type = "text" id = "phonenumber" name = "phonenumber" value = "">
+			</p>
+			<p>
+				<label for = "gmail" > Enter your Gmail: </label>
+				<input type = "text" id = "gmail" name = "gmail" value = "">
+			</p>
+			<p>
+				<label for = "facebook" > Enter your Facebook: </label>
+				<input type = "text" id = "facebook" name = "facebook" value = "">
+			</p>
+		</fieldset>
+		
+		<fieldset>
+			<legend> Occupation </legend>
+			<p> <strong> Select your occupation: </strong> </p>
+			<p>
+				<label for="highschool">Highschool</label>
+				<input type="radio" id="highschool" name="occupation" value="highschool">
+			</p>
+			<p>
+				<label for="university">University</label>
+				<input type="radio" id="university" name="occupation" value="university">
+			</p>
+			<p>
+				<label for="working">Working</label>
+				<input type="radio" id="working" name="occupation" value="working">
+			</p>
+			<p>
+				<label for="retired">Retired</label>
+				<input type="radio" id="retired" name="occupation" value="retired">
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend> Major </legend>
+			<p> <strong> Select major(s) you want to learn: </strong> </p>
+			<p> 
+				<label for = "economic"> International Economics - 10tr VND </label>
+				<input type ="checkbox" id = "economic" name = "major_economics" value ="selected">
+			</p>
+			<p>
+				<label for = "marketing"> Marketing - 10tr VND</label>
+				<input type = "checkbox" id = "marketing" name = "major_marketing" value ="selected">
+			</p>
+			<p>
+				<label for = "it"> Information of Technology - 10tr VND</label>
+				<input type = "checkbox" id = "it" name ="major_information_of_technology" value ="selected">
+			</p>
+			<p>
+				<label for = "lab"> Laboratory Engineering - 10tr VND</label>
+				<input type = "checkbox" id = "lab" name ="major_lab_engineering" value ="selected">
+			</p>
+			<p>
+				<label for = "business"> International Business - 10tr VND</label>
+				<input type = "checkbox" id = "business" name ="major_business" value ="selected">
+			</p>
+			<p>
+				<label for = "teacher"> English Language Teacher - 10tr VND</label>
+				<input type = "checkbox" id = "teacher" name ="major_teacher" value ="selected">
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend> Payment </legend>
+			<p> <strong> Select your paymen method:</strong> </p>
+			<p>
+				<label for = "payment" > Payment method :</label>
+				<select id = "payment" name = "payment">
+					<option value = "None"> None </option>
+					<option value = "Cash"> Cash </option>
+					<option value = "Credit Card"> Credit Card </option>
+				</select>
+			</p>
+		</fieldset>
+
+		<br/>
+		<input type="submit" value="Register Now">	
+		<br/>
+		<br/>
+	</form>
 	
 	<hr>
 	<footer>
