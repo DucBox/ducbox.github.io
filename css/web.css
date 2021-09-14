@@ -1,12 +1,15 @@
 #register_form {
 	text-align : center;
-	background-color: rgb(135, 206, 235);
-	margin: 0px;
+	background-color: #FFFFCC;
+	font-size : 35px;
+	
 }
 #menu_text {
 	color : Blue;
 	margin : 0;
 	width: 100%;
+	border-style: solid;
+  border-color: black;
 }
 
 /** {
@@ -45,11 +48,14 @@ nav a:hover {
 	flex : 40%;
 	padding: 5px 20px;
 	background-color: #f1f1f1;
+	border-style: solid;
+  border-color: #92a8d1;
 }
 #right_side {
 	flex: 60%;
 	padding: 5px 20px;
-	/*background-color: rgb(25,217,253);*/
+	border-style: solid;
+  border-color: grey;
 }
 #flex_container {
 	display : flex;
@@ -135,10 +141,15 @@ table th {
 
 #picture_img {
 	width: 100%;
+	
 }
 
+
+
 #form {
-	background-color: rgb(135, 206, 235);
+	background-color: #FFFFCC;
+	border-style: solid;
+  border-color: black;
 }
 @media(max-width: 800px) {
 	#left_side {
