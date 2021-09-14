@@ -1,31 +1,27 @@
-#register_form {
-	text-align : center;
-	background-color: #FFFFCC;
-	font-size : 35px;
-	
-}
 #menu_text {
-	color : Blue;
+	color : White;
 	margin : 0;
 	width: 100%;
 	border-style: solid;
   border-color: black;
+  background: url("https://i.pinimg.com/originals/69/da/a9/69daa92eee44f241dc40afb53e66276f.jpg");
+  background: cover;
+  background-repeat: repeat;
+  font-size: 50px;
+  text-align : center;
+	padding:  80px;
 }
 
 /** {
-	padding : 0;
-	margin :0;
+	padding : 0px;
+	margin :0px;
 }*/
 
 
 h2 {
 	color :red;
 }
-#menu_text {
-	background-color : rgb(0,157,196);
-	text-align : center;
-	padding:  80px;
-}
+
 nav {
 	background-color : black;
 	overflow : hidden; 
@@ -47,15 +43,18 @@ nav a:hover {
 #left_side {
 	flex : 40%;
 	padding: 5px 20px;
-	background-color: #f1f1f1;
-	border-style: solid;
-  border-color: #92a8d1;
+	border-right-style: solid;
+  border-right-color: grey;
+  border-left-style: solid;
+  border-left-color: grey;
+  
 }
 #right_side {
 	flex: 60%;
 	padding: 5px 20px;
-	border-style: solid;
-  border-color: grey;
+	border-right-style: solid;
+  border-right-color: grey;
+ 
 }
 #flex_container {
 	display : flex;
@@ -65,7 +64,7 @@ nav a:hover {
 footer {
 	background-color : black;
 	color : white;
-	padding: 10px;
+	padding: 15px;
 	text-align: center;
 }
 footer a {
@@ -143,7 +142,10 @@ table th {
 	width: 100%;
 	
 }
-
+#register_form {
+	text-align : center;
+	font-size : 35px;
+}
 #welcome_container {
 	display: flex;
 	flex-wrap:  wrap;
@@ -154,6 +156,13 @@ table th {
 	width: 100%;
 }
 
+html {
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQus3ksqA51af4l7JDIDF3uj7eZs8rZnMiFUpQlrl5zYkivpLN4X00iRTo7LomxPPr_nL4&usqp=CAU");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+
+}
 #form {
 	background-color: #FFFFCC;
 	border-style: solid;
