@@ -144,7 +144,15 @@ table th {
 	
 }
 
+#welcome_container {
+	display: flex;
+	flex-wrap:  wrap;
+}
 
+
+#welcome_img {
+	width: 100%;
+}
 
 #form {
 	background-color: #FFFFCC;
